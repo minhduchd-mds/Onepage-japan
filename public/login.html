@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vn">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/all.min.css" media="all" >
+</head>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<body>
+<div id="preloader" style="display: none;">
+    <div class="clear-loading  loading-effect">
+        <div class="lds-dual-ring"></div>
+    </div>
+</div>
+<div class="account-pages mt-5 mb-5">
+    <div class="container">
+        <div class="row justify-content-center pt-5">
+            <div class="col-lg-10">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="logo">
+                            <img src="images/icon/logo.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="row mt-5 mb-5">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 bg-lite">
+                                <div class="login-hideer mt-4">
+                                    <!-- Logo -->
+                                    <h4 class="text-center font-weight-bold">Đăng Ký</h4>
+
+                                    <form action="#"  id="form-registration" autocapitalize="off" class="needs-validation row" novalidate>
+                                        <div class="form-group col-12" data-validate="Nhập địa chỉ email ex@abc.xyz">
+                                            <label for="email-registration">Đại chỉ email:</label>
+                                            <input class="form-control input100" type="email" id="email-registration" name="email" required="">
+                                            <div class="invalid-feedback">Nhập địa chỉ email</div>
+                                        </div>
+
+                                        <div class="form-group col-12" data-validate="Nhập mật khẩu | Kí tự tối đa 10">
+                                            <label for="password-registration">Mật khẩu:</label>
+                                            <input class="form-control input100" type="password" maxlength="15" id="password-registration" placeholder="Password to text 15" required="" autocomplete="on">
+                                            <span toggle="#password-registration" class="fas fa-fw fa-eye field-icon toggle-password"></span>
+                                            <div class="invalid-feedback">Nhập mật khẩu</div>
+                                        </div>
+                                        <div class="form-group w-75 mb-0 m-auto text-center">
+                                            <a class="btn btn-primary color-white"  href="javascript:void(0);" id="btn-singup"> Đăng ký </a>
+                                        </div>
+                                    </form>
+                                    <span class="show-mobile  d-sm-block d-md-none d-lg-none d-xl-none">
+                                      <p class="text-muted mt-3">Bạn đã có tài khoản ? <a data-toggle="tab" href="javascript:void(0);"  class="loginbtn text-dark ml-1 active"><b>Đăng nhập</b></a></p>
+                                </span>
+                                </div>
+                                <div class="bg-right mt-5 mb-5 w-75 m-auto text-center">
+                                    <h4 class="text-dark-50 text-center mt-4 font-weight-bold">Đăng ký miễn phí </h4>
+                                    <p class="text-muted mt-5">Bạn chưa có tài khoản ư ? Tạo tài khoản ngay bây giờ</p>
+                                    <a data-toggle="tab" href="javascript:void(0);"  class="registrationbtn btn btn-primary text-white ml-1 mt-5 active">Đăng Ký</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 bg-lite-r">
+                                <div id="show-login" class="mt-4">
+                                    <h4 class="text-center font-weight-bold">Đăng nhập</h4>
+                                    <form action="#"  id="form-login"  method="post"  class="needs-validation" novalidate>
+
+                                        <div class="form-group mb-3">
+                                            <label for="current-email">Địa chỉ email:</label>
+                                            <input class="form-control" type="email" id="current-email" name="email" required=""  aria-describedby="inputGroupPrepend">
+                                            <div class="invalid-feedback-l"></div>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <a href="#" id="forgot-password-btn" class="text-muted float-right"><small>Quên mật khẩu?</small></a>
+                                            <label for="current-password">Mật khẩu:</label>
+                                            <input class="form-control" type="password" name="password" required="" id="current-password" autocomplete="on">
+<!--                                            <span toggle="#password-registration" class="fas fa-fw fa-eye field-icon toggle-password"></span>-->
+                                            <div class="invalid-feedback-l-p"></div>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="checkbox-signin" required="">
+                                                <label class="custom-control-label" for="checkbox-signin">Luu lại</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-0 text-center">
+                                            <a id="btn-singin" class="btn btn-primary color-white" href="javascript:void(0);" title="Login"> Đăng nhập </a>
+                                        </div>
+                                    </form>
+                                    <span class="show-mobile  d-sm-block d-md-none d-lg-none d-xl-none">
+                                      <p class="text-muted mt-3">Bạn chưa có tài khoản? <a data-toggle="tab" href="javascript:void(0);"  class="registrationbtn text-dark ml-1 active"><b>Đăng Ký</b></a></p>
+                                </span>
+                                </div>
+
+                                <div class="bg-left text-center w-75 m-auto">
+                                    <h4 class="text-dark-50 text-center mt-4 font-weight-bold">Xin chào bạn</h4>
+                                    <p class="text-muted mt-5">Chúc bạn một ngày mới tốt lành</p>
+                                    <a data-toggle="tab" href="javascript:void(0);"  class="loginbtn btn  btn-primary text-white ml-1 mt-5">Đăng Nhập</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+    <!-- end page -->
+</div>
+<div class="modal fade " id="forgot-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ">
+            <div class="modal-body">
+                <button type="button" class="close mb-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form id="from-login" class="form-row  text-center">
+                    <h4 class="w-100">QUÊN TÀI KHOẢN</h4>
+                    <div class="form-group w-100">
+                        <label for="emailPhone"></label><input id="emailPhone" class="web form-control" type="text" placeholder="Email hoặc số điện thoại" maxlength="30" required="">
+                        <span class="error pt-3"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="section-field w-100 text-uppercase text-right mt-2">
+                        <a class="btn btn-sm btn-primary text-white full-rounded animated right-icn" id="btnforgetPassword">Gửi</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script  src="js/jquery-3.4.1.min.js" ></script>
+<script src="js/firebase.js"></script>
+<script src="js/bootstrap.min.js" ></script>
+<script src="js/wow.min.js"></script>
+<!--<script src="js/main.js" ></script>-->
+<script src="js/sv-js.js" ></script>
+
+<script>
+    $(document).ready(function () {
+        $('.registrationbtn').on('click',function (e) {
+            $('#show-login, .bg-right').hide(1000);
+            $('.login-hideer,.bg-left ').show(1000);
+            $('.bg-lite').css('background','none');
+            $('.bg-lite-r').css('background','aliceblue').hide();
+        });
+        $('.loginbtn').on('click',function (e) {
+            $('#show-login,.bg-right').show(1000);
+            $('.login-hideer,.bg-left').hide(1000);
+            $('.bg-lite').css('background','aliceblue');
+            $('.bg-lite-r').css('background','none').show();
+        });
+
+		$(".toggle-password").click(function() {
+			$(this).toggleClass("fa-eye fa-eye-slash");
+			const input = $($(this).attr("toggle"));
+			if (input.attr("type") === "password") {
+				input.attr("type", "text");
+			} else {
+				input.attr("type", "password");
+			}
+		});
+
+    });
+</script>
+</body>
+</html>
